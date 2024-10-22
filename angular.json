@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ProjectC": {
+    "Photographer-website": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/project-c",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -43,7 +43,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/Photographer-website/"
             },
             "development": {
               "buildOptimizer": false,
@@ -60,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ProjectC:build:production"
+              "browserTarget": "Photographer-website:build:production"
             },
             "development": {
-              "browserTarget": "ProjectC:build:development"
+              "browserTarget": "Photographer-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ProjectC:build"
+            "browserTarget": "Photographer-website:build"
           }
         },
         "test": {
@@ -94,8 +95,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "5b08831e-d2c9-4266-8fbd-9d546f0e15a9"
   }
 }
